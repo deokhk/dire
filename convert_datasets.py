@@ -23,11 +23,9 @@ np.random.seed(13370)
 
 
 def delete_paragraph(instance: Dict, paragraph_title: str) -> None:
-    breakpoint()
     index = [paragraph[0] for paragraph in instance["context"]].index(paragraph_title)
     instance["context"].pop(index)
-    breakpoint()
-     
+
 def replace_paragraph(instance: Dict, original_paragraph_title: str, updated_paragraph: List) -> None:
     index = [paragraph[0] for paragraph in instance["context"]].index(original_paragraph_title)
     instance["context"][index] = updated_paragraph
@@ -35,7 +33,7 @@ def replace_paragraph(instance: Dict, original_paragraph_title: str, updated_par
 def delete_supporting_paragraph(instance: Dict,
                                 supporting_paragraph_titles: List[str]) -> None:
     instance["supporting_facts"] = [info for info in instance["supporting_facts"]
-                                    if info[0] not in supporting_paragraph_titles]
+                                    if info[0] in supporting_paragraph_titles]
 
 def write_instances_to_file_path(instances, file_path):
     with open(file_path, "w") as file:

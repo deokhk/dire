@@ -13,12 +13,6 @@
                 ]
             ],
             [
-                "h",
-                [
-                    "Boston University is in Cambridge"
-                ]
-            ],
-            [
                 "c",
                 [
                     "Harvard is in Massechussetts"
@@ -40,6 +34,12 @@
                 "f",
                 [
                     "It has a movie called Social Network."
+                ]
+            ],
+            [
+                "h",
+                [
+                    "Boston University is in Cambridge"
                 ]
             ],
             [
@@ -82,6 +82,12 @@
                 ]
             ],
             [
+                "b",
+                [
+                    "Facebook was launched in Harvard University"
+                ]
+            ],
+            [
                 "c",
                 [
                     "Harvard is in Massechussetts"
@@ -106,12 +112,6 @@
                 ]
             ],
             [
-                "g",
-                [
-                    "Harvard University is in Cambridge."
-                ]
-            ],
-            [
                 "i",
                 [
                     "Facebook has headquarters in Silicon Valley"
@@ -126,7 +126,7 @@
         ],
         "supporting_facts": [
             [
-                "b",
+                "g",
                 0
             ]
         ],
